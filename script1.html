@@ -1,0 +1,47 @@
+<html>
+<head><!--head start here --><TITLE>My For loop Example</TITLE><!--type here -->
+<style><!--style start here -->
+table {
+border-collapse: collapse;
+width: 50%;
+}
+
+th, td {
+text-align: left;
+padding: 12px;
+}
+
+tr:nth-child(even){background-color: yellow;
+
+th {
+background-color: gray;
+color: blue;
+}
+</style><!--style end here -->
+</head><!--head end here -->
+<body><!--start body -->
+<?php
+$Sing = array("opera", "r&b", "jazz");//course array
+$Dance = array("reggae", "hiphop", "salsa");//dance array
+$Art = array("pencil", "paint", "digital");//professor array here
+echo '<input type="image" src="Entertainment.jpeg" alt="Submit">';//image selection here
+echo '<table><tr><tr><th>Sr.No</th><th>Sing</th><th>Dance</th><th>Art</th></tr>';//output display
+for($i=0;$i<count($course);$i++)//for loop here
+{
+//switch case example
+switch ($i) {
+case 0:
+echo "<tr><td>1</td><td>" . $sing[$i] . "</td><td>" . $dance[$i] . "</td><td>" . $art[$i] . "</td></tr>";//output display here in table
+break;
+case 1:
+echo "<tr><td>2</td><td>" . $sing[$i] . "</td><td>" . $Dance[$i] . "</td><td>" . $Art[$i] . "</td></tr>";//output display here in table
+break;
+case 2:
+echo "<tr><td>3</td><td>" . $sing[$i] . "</td><td>" . $Dance[$i] . "</td><td>" . $Art[$i] . "</td></tr>";//output display here in table
+break;
+}
+}
+?>
+
+</body><!--end body -->
+</html>
